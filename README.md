@@ -9,7 +9,7 @@
 ### Programs/Methods Used to ETL Data, Build a Machine Learning Model, & Test and Train Model to Predict a Team's W/L Record based on statistics.
 - [x] Extracted data as CSV files
 - [x] Jupyter Notebooks/Pandas to clean data (remove extraneous columns, join or merge files; to produce consistent datasets for each year)
-- [ ] Continue wrangling .csv's into a usable dataframe for training and testing
+- [x] Continue wrangling .csv's into a usable dataframe for training and testing
 - [ ] Build a machine learning model (classification?)
 - [ ] Train and test model on 2000-2018 to predict 2019 season W/L ratio (season win total)
 - [ ] Verify accuracy and viability of model by comparing results of model predictions to actual 2019 W/L ratios
