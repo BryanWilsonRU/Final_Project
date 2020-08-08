@@ -15,14 +15,14 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='2000-2019_cleaned_data4' inline='true' name='federated.0m6jdlv0075et813gdyge1yjkz21' version='18.1'>
+    <datasource caption='2000-2019_cleaned_data_Tableau' inline='true' name='federated.1ndu8n6062jvzy18wyty70vxo2f6' version='18.1'>
       <connection class='federated'>
         <named-connections>
-          <named-connection caption='2000-2019_cleaned_data4' name='textscan.0kdh06m088tncm0zquubg15u3okm'>
-            <connection class='textscan' directory='C:/Users/bremi/OneDrive/Rutgers Bootcamp/Projects/Final Project/Repository/Data/Team_Stats' filename='2000-2019_cleaned_data4.csv' password='' server='' />
+          <named-connection caption='2000-2019_cleaned_data_Tableau' name='textscan.19rn5xr0otou3q1eq7phy1568ug6'>
+            <connection class='textscan' directory='C:/Users/bremi/OneDrive/Rutgers Bootcamp/Projects/Final Project/Repository/Data/Team_Stats' filename='2000-2019_cleaned_data_Tableau.csv' password='' server='' />
           </named-connection>
         </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0kdh06m088tncm0zquubg15u3okm' name='2000-2019_cleaned_data4.csv' table='[2000-2019_cleaned_data4#csv]' type='table'>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.19rn5xr0otou3q1eq7phy1568ug6' name='2000-2019_cleaned_data_Tableau.csv' table='[2000-2019_cleaned_data_Tableau#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
             <column datatype='integer' name='Year' ordinal='0' />
             <column datatype='integer' name='Rk_Off' ordinal='1' />
@@ -86,11 +86,23 @@
             <column datatype='real' name='PPG_Off' ordinal='59' />
             <column datatype='real' name='PPG_Def' ordinal='60' />
             <column datatype='real' name='PT_Result' ordinal='61' />
-            <column datatype='real' name='PT_Wins' ordinal='62' />
-            <column datatype='real' name='PT_Losses' ordinal='63' />
+            <column datatype='integer' name='PF_Off_Squared' ordinal='62' />
+            <column datatype='integer' name='PF_Def_Squared' ordinal='63' />
+            <column datatype='integer' name='PF_Off_Def_Squared' ordinal='64' />
+            <column datatype='integer' name='PT_Wins' ordinal='65' />
+            <column datatype='integer' name='PT_Losses' ordinal='66' />
+            <column datatype='integer' name='NY_Win' ordinal='67' />
+            <column datatype='integer' name='NY_Loss' ordinal='68' />
+            <column datatype='real' name='NY_Win/Loss_Pct' ordinal='69' />
+            <column datatype='real' name='PT_Pct_Diff' ordinal='70' />
+            <column datatype='real' name='Pct_Diff_Squared' ordinal='71' />
+            <column datatype='integer' name='PT_Win_Diff' ordinal='72' />
+            <column datatype='integer' name='Win_Diff_Squared' ordinal='73' />
+            <column datatype='integer' name='PT_Loss_Diff' ordinal='74' />
+            <column datatype='integer' name='Loss_Diff_Squared' ordinal='75' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0kdh06m088tncm0zquubg15u3okm' name='2000-2019_cleaned_data4.csv' table='[2000-2019_cleaned_data4#csv]' type='table'>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.19rn5xr0otou3q1eq7phy1568ug6' name='2000-2019_cleaned_data_Tableau.csv' table='[2000-2019_cleaned_data_Tableau#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
             <column datatype='integer' name='Year' ordinal='0' />
             <column datatype='integer' name='Rk_Off' ordinal='1' />
@@ -154,15 +166,27 @@
             <column datatype='real' name='PPG_Off' ordinal='59' />
             <column datatype='real' name='PPG_Def' ordinal='60' />
             <column datatype='real' name='PT_Result' ordinal='61' />
-            <column datatype='real' name='PT_Wins' ordinal='62' />
-            <column datatype='real' name='PT_Losses' ordinal='63' />
+            <column datatype='integer' name='PF_Off_Squared' ordinal='62' />
+            <column datatype='integer' name='PF_Def_Squared' ordinal='63' />
+            <column datatype='integer' name='PF_Off_Def_Squared' ordinal='64' />
+            <column datatype='integer' name='PT_Wins' ordinal='65' />
+            <column datatype='integer' name='PT_Losses' ordinal='66' />
+            <column datatype='integer' name='NY_Win' ordinal='67' />
+            <column datatype='integer' name='NY_Loss' ordinal='68' />
+            <column datatype='real' name='NY_Win/Loss_Pct' ordinal='69' />
+            <column datatype='real' name='PT_Pct_Diff' ordinal='70' />
+            <column datatype='real' name='Pct_Diff_Squared' ordinal='71' />
+            <column datatype='integer' name='PT_Win_Diff' ordinal='72' />
+            <column datatype='integer' name='Win_Diff_Squared' ordinal='73' />
+            <column datatype='integer' name='PT_Loss_Diff' ordinal='74' />
+            <column datatype='integer' name='Loss_Diff_Squared' ordinal='75' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -179,31 +203,31 @@
             <remote-name>Year</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Year]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Year</remote-alias>
             <ordinal>0</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rk_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rk_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rk_Off</remote-alias>
             <ordinal>1</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Team</remote-name>
             <remote-type>129</remote-type>
             <local-name>[Team]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Team</remote-alias>
             <ordinal>2</ordinal>
             <local-type>string</local-type>
@@ -212,739 +236,883 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Win</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Win]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Win</remote-alias>
             <ordinal>3</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Loss</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Loss]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Loss</remote-alias>
             <ordinal>4</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Games</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Games]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Games</remote-alias>
             <ordinal>5</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PF_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[PF_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>PF_Off</remote-alias>
             <ordinal>6</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Total Yds_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Total Yds_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Total Yds_Off</remote-alias>
             <ordinal>7</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Plays_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Plays_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Plays_Off</remote-alias>
             <ordinal>8</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Y/P_Off</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Y/P_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Y/P_Off</remote-alias>
             <ordinal>9</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>TO_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[TO_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>TO_Off</remote-alias>
             <ordinal>10</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>FL_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[FL_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>FL_Off</remote-alias>
             <ordinal>11</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>1stD_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[1stD_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>1stD_Off</remote-alias>
             <ordinal>12</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Cmp_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Cmp_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Cmp_Off</remote-alias>
             <ordinal>13</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass Att_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pass Att_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass Att_Off</remote-alias>
             <ordinal>14</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass Yds_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pass Yds_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass Yds_Off</remote-alias>
             <ordinal>15</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass TD_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pass TD_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass TD_Off</remote-alias>
             <ordinal>16</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Int_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Int_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Int_Off</remote-alias>
             <ordinal>17</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass NY/A_Off</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Pass NY/A_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass NY/A_Off</remote-alias>
             <ordinal>18</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass 1stD_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pass 1stD_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass 1stD_Off</remote-alias>
             <ordinal>19</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush Att_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rush Att_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush Att_Off</remote-alias>
             <ordinal>20</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush Yds_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rush Yds_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush Yds_Off</remote-alias>
             <ordinal>21</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush TD_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rush TD_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush TD_Off</remote-alias>
             <ordinal>22</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush Y/A_Off</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Rush Y/A_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush Y/A_Off</remote-alias>
             <ordinal>23</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush 1stD_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rush 1stD_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush 1stD_Off</remote-alias>
             <ordinal>24</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pen_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pen_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pen_Off</remote-alias>
             <ordinal>25</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pen Yds_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pen Yds_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pen Yds_Off</remote-alias>
             <ordinal>26</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>1stPy_Off</remote-name>
             <remote-type>20</remote-type>
             <local-name>[1stPy_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>1stPy_Off</remote-alias>
             <ordinal>27</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Sc%_Off</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Sc%_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Sc%_Off</remote-alias>
             <ordinal>28</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>TO%_Off</remote-name>
             <remote-type>5</remote-type>
             <local-name>[TO%_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>TO%_Off</remote-alias>
             <ordinal>29</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>EXP_Off</remote-name>
             <remote-type>5</remote-type>
             <local-name>[EXP_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>EXP_Off</remote-alias>
             <ordinal>30</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rk_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rk_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rk_Def</remote-alias>
             <ordinal>31</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PF_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[PF_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>PF_Def</remote-alias>
             <ordinal>32</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Total Yds_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Total Yds_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Total Yds_Def</remote-alias>
             <ordinal>33</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Ply_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Ply_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Ply_Def</remote-alias>
             <ordinal>34</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Y/P_Def</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Y/P_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Y/P_Def</remote-alias>
             <ordinal>35</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>TO_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[TO_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>TO_Def</remote-alias>
             <ordinal>36</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>FL_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[FL_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>FL_Def</remote-alias>
             <ordinal>37</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Total 1stD_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Total 1stD_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Total 1stD_Def</remote-alias>
             <ordinal>38</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Cmp_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Cmp_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Cmp_Def</remote-alias>
             <ordinal>39</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass Att_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pass Att_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass Att_Def</remote-alias>
             <ordinal>40</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass Yds_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pass Yds_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass Yds_Def</remote-alias>
             <ordinal>41</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass TD_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pass TD_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass TD_Def</remote-alias>
             <ordinal>42</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Int_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Int_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Int_Def</remote-alias>
             <ordinal>43</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass NY/A_Def</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Pass NY/A_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass NY/A_Def</remote-alias>
             <ordinal>44</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pass 1stD_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pass 1stD_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pass 1stD_Def</remote-alias>
             <ordinal>45</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush Att_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rush Att_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush Att_Def</remote-alias>
             <ordinal>46</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush Yds_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rush Yds_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush Yds_Def</remote-alias>
             <ordinal>47</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush TD_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rush TD_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush TD_Def</remote-alias>
             <ordinal>48</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush Y/A_Def</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Rush Y/A_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush Y/A_Def</remote-alias>
             <ordinal>49</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rush 1stD_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Rush 1stD_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Rush 1stD_Def</remote-alias>
             <ordinal>50</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pen_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pen_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pen_Def</remote-alias>
             <ordinal>51</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pen Yds_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Pen Yds_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Pen Yds_Def</remote-alias>
             <ordinal>52</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>1stPy_Def</remote-name>
             <remote-type>20</remote-type>
             <local-name>[1stPy_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>1stPy_Def</remote-alias>
             <ordinal>53</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Sc%_Def</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Sc%_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Sc%_Def</remote-alias>
             <ordinal>54</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>TO%_Def</remote-name>
             <remote-type>5</remote-type>
             <local-name>[TO%_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>TO%_Def</remote-alias>
             <ordinal>55</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>EXP_Def</remote-name>
             <remote-type>5</remote-type>
             <local-name>[EXP_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>EXP_Def</remote-alias>
             <ordinal>56</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Overall Production</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Overall Production]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Overall Production</remote-alias>
             <ordinal>57</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Win/Loss_Pct</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Win/Loss_Pct]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>Win/Loss_Pct</remote-alias>
             <ordinal>58</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PPG_Off</remote-name>
             <remote-type>5</remote-type>
             <local-name>[PPG_Off]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>PPG_Off</remote-alias>
             <ordinal>59</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PPG_Def</remote-name>
             <remote-type>5</remote-type>
             <local-name>[PPG_Def]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>PPG_Def</remote-alias>
             <ordinal>60</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PT_Result</remote-name>
             <remote-type>5</remote-type>
             <local-name>[PT_Result]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>PT_Result</remote-alias>
             <ordinal>61</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF_Off_Squared</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PF_Off_Squared]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>PF_Off_Squared</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF_Def_Squared</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PF_Def_Squared]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>PF_Def_Squared</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF_Off_Def_Squared</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PF_Off_Def_Squared]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>PF_Off_Def_Squared</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PT_Wins</remote-name>
-            <remote-type>5</remote-type>
+            <remote-type>20</remote-type>
             <local-name>[PT_Wins]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>PT_Wins</remote-alias>
-            <ordinal>62</ordinal>
-            <local-type>real</local-type>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>PT_Losses</remote-name>
-            <remote-type>5</remote-type>
+            <remote-type>20</remote-type>
             <local-name>[PT_Losses]</local-name>
-            <parent-name>[2000-2019_cleaned_data4.csv]</parent-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
             <remote-alias>PT_Losses</remote-alias>
-            <ordinal>63</ordinal>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NY_Win</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NY_Win]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>NY_Win</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NY_Loss</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NY_Loss]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>NY_Loss</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NY_Win/Loss_Pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NY_Win/Loss_Pct]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>NY_Win/Loss_Pct</remote-alias>
+            <ordinal>69</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PT_Pct_Diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PT_Pct_Diff]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>PT_Pct_Diff</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pct_Diff_Squared</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pct_Diff_Squared]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>Pct_Diff_Squared</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PT_Win_Diff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PT_Win_Diff]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>PT_Win_Diff</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win_Diff_Squared</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Win_Diff_Squared]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>Win_Diff_Squared</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PT_Loss_Diff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PT_Loss_Diff]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>PT_Loss_Diff</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loss_Diff_Squared</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Loss_Diff_Squared]</local-name>
+            <parent-name>[2000-2019_cleaned_data_Tableau.csv]</parent-name>
+            <remote-alias>Loss_Diff_Squared</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
         </metadata-records>
       </connection>
@@ -960,13 +1128,23 @@
       <column caption='FL Off' datatype='integer' name='[FL_Off]' role='measure' type='quantitative' />
       <column caption='Int Def' datatype='integer' name='[Int_Def]' role='measure' type='quantitative' />
       <column caption='Int Off' datatype='integer' name='[Int_Off]' role='measure' type='quantitative' />
+      <column caption='Loss Diff Squared' datatype='integer' name='[Loss_Diff_Squared]' role='measure' type='quantitative' />
+      <column caption='NY Loss' datatype='integer' name='[NY_Loss]' role='measure' type='quantitative' />
+      <column caption='NY Win/Loss Pct' datatype='real' name='[NY_Win/Loss_Pct]' role='measure' type='quantitative' />
+      <column caption='NY Win' datatype='integer' name='[NY_Win]' role='measure' type='quantitative' />
       <column caption='PF Def' datatype='integer' name='[PF_Def]' role='measure' type='quantitative' />
+      <column caption='PF Def Squared' datatype='integer' name='[PF_Def_Squared]' role='measure' type='quantitative' />
       <column caption='PF Off' datatype='integer' name='[PF_Off]' role='measure' type='quantitative' />
+      <column caption='PF Off Def Squared' datatype='integer' name='[PF_Off_Def_Squared]' role='measure' type='quantitative' />
+      <column caption='PF Off Squared' datatype='integer' name='[PF_Off_Squared]' role='measure' type='quantitative' />
       <column caption='PPG Def' datatype='real' name='[PPG_Def]' role='measure' type='quantitative' />
       <column caption='PPG Off' datatype='real' name='[PPG_Off]' role='measure' type='quantitative' />
-      <column caption='PT Losses' datatype='real' name='[PT_Losses]' role='measure' type='quantitative' />
+      <column caption='PT Loss Diff' datatype='integer' name='[PT_Loss_Diff]' role='measure' type='quantitative' />
+      <column caption='PT Losses' datatype='integer' name='[PT_Losses]' role='measure' type='quantitative' />
+      <column caption='PT Pct Diff' datatype='real' name='[PT_Pct_Diff]' role='measure' type='quantitative' />
       <column caption='PT Result' datatype='real' name='[PT_Result]' role='measure' type='quantitative' />
-      <column caption='PT Wins' datatype='real' name='[PT_Wins]' role='measure' type='quantitative' />
+      <column caption='PT Win Diff' datatype='integer' name='[PT_Win_Diff]' role='measure' type='quantitative' />
+      <column caption='PT Wins' datatype='integer' name='[PT_Wins]' role='measure' type='quantitative' />
       <column caption='Pass 1stD Def' datatype='integer' name='[Pass 1stD_Def]' role='measure' type='quantitative' />
       <column caption='Pass 1stD Off' datatype='integer' name='[Pass 1stD_Off]' role='measure' type='quantitative' />
       <column caption='Pass Att Def' datatype='integer' name='[Pass Att_Def]' role='measure' type='quantitative' />
@@ -977,6 +1155,7 @@
       <column caption='Pass TD Off' datatype='integer' name='[Pass TD_Off]' role='measure' type='quantitative' />
       <column caption='Pass Yds Def' datatype='integer' name='[Pass Yds_Def]' role='measure' type='quantitative' />
       <column caption='Pass Yds Off' datatype='integer' name='[Pass Yds_Off]' role='measure' type='quantitative' />
+      <column caption='Pct Diff Squared' datatype='real' name='[Pct_Diff_Squared]' role='measure' type='quantitative' />
       <column caption='Pen Yds Def' datatype='integer' name='[Pen Yds_Def]' role='measure' type='quantitative' />
       <column caption='Pen Yds Off' datatype='integer' name='[Pen Yds_Off]' role='measure' type='quantitative' />
       <column caption='Pen Def' datatype='integer' name='[Pen_Def]' role='measure' type='quantitative' />
@@ -1005,19 +1184,20 @@
       <column caption='Total Yds Def' datatype='integer' name='[Total Yds_Def]' role='measure' type='quantitative' />
       <column caption='Total Yds Off' datatype='integer' name='[Total Yds_Off]' role='measure' type='quantitative' />
       <column caption='Win/Loss Pct' datatype='real' name='[Win/Loss_Pct]' role='measure' type='quantitative' />
+      <column caption='Win Diff Squared' datatype='integer' name='[Win_Diff_Squared]' role='measure' type='quantitative' />
       <column caption='Y/P Def' datatype='real' name='[Y/P_Def]' role='measure' type='quantitative' />
       <column caption='Y/P Off' datatype='real' name='[Y/P_Off]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='2000-2019_cleaned_data4.csv' datatype='table' name='[__tableau_internal_object_id__].[2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='2000-2019_cleaned_data_Tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='2000-2019_cleaned_data4.csv' id='2000-2019_cleaned_data4.csv_59D669F831AE46999A0D4B22CBF339D1'>
+          <object caption='2000-2019_cleaned_data_Tableau.csv' id='2000-2019_cleaned_data_Tableau.csv_635534E085FE4000BC65C5FEA7A8F5A6'>
             <properties context=''>
-              <relation connection='textscan.0kdh06m088tncm0zquubg15u3okm' name='2000-2019_cleaned_data4.csv' table='[2000-2019_cleaned_data4#csv]' type='table'>
+              <relation connection='textscan.19rn5xr0otou3q1eq7phy1568ug6' name='2000-2019_cleaned_data_Tableau.csv' table='[2000-2019_cleaned_data_Tableau#csv]' type='table'>
                 <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
                   <column datatype='integer' name='Year' ordinal='0' />
                   <column datatype='integer' name='Rk_Off' ordinal='1' />
@@ -1081,8 +1261,20 @@
                   <column datatype='real' name='PPG_Off' ordinal='59' />
                   <column datatype='real' name='PPG_Def' ordinal='60' />
                   <column datatype='real' name='PT_Result' ordinal='61' />
-                  <column datatype='real' name='PT_Wins' ordinal='62' />
-                  <column datatype='real' name='PT_Losses' ordinal='63' />
+                  <column datatype='integer' name='PF_Off_Squared' ordinal='62' />
+                  <column datatype='integer' name='PF_Def_Squared' ordinal='63' />
+                  <column datatype='integer' name='PF_Off_Def_Squared' ordinal='64' />
+                  <column datatype='integer' name='PT_Wins' ordinal='65' />
+                  <column datatype='integer' name='PT_Losses' ordinal='66' />
+                  <column datatype='integer' name='NY_Win' ordinal='67' />
+                  <column datatype='integer' name='NY_Loss' ordinal='68' />
+                  <column datatype='real' name='NY_Win/Loss_Pct' ordinal='69' />
+                  <column datatype='real' name='PT_Pct_Diff' ordinal='70' />
+                  <column datatype='real' name='Pct_Diff_Squared' ordinal='71' />
+                  <column datatype='integer' name='PT_Win_Diff' ordinal='72' />
+                  <column datatype='integer' name='Win_Diff_Squared' ordinal='73' />
+                  <column datatype='integer' name='PT_Loss_Diff' ordinal='74' />
+                  <column datatype='integer' name='Loss_Diff_Squared' ordinal='75' />
                 </columns>
               </relation>
             </properties>
@@ -1110,7 +1302,7 @@
         <rows />
         <cols />
       </table>
-      <simple-id uuid='{B2BEA7C5-5B63-4F29-AF5E-7BCD32B626C8}' />
+      <simple-id uuid='{4F232F6A-368F-4D8C-98FE-327A15B7610D}' />
     </worksheet>
   </worksheets>
   <windows source-height='30'>
@@ -1135,7 +1327,7 @@
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{2ACA02F0-1A8D-47C9-AF78-77D7BEE3602D}' />
+      <simple-id uuid='{447D1829-9E3A-4173-A65F-733E9925071B}' />
     </window>
   </windows>
 </workbook>
