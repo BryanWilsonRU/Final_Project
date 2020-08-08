@@ -1,0 +1,1093 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0721.1350                               -->
+<workbook source-build='2020.2.4 (20202.20.0721.1350)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='2000-2019_cleaned_data3' inline='true' name='federated.1emdif3029sm41114guj106eahgk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2000-2019_cleaned_data4' name='textscan.0nf7w7h1ajta87180jrqx0jnaery'>
+            <connection class='textscan' directory='C:/Users/bremi/OneDrive/Rutgers Bootcamp/Projects/Final Project/Repository/Data/Team_Stats' filename='2000-2019_cleaned_data4.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0nf7w7h1ajta87180jrqx0jnaery' name='2000-2019_cleaned_data3.csv' table='[2000-2019_cleaned_data3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Rk_Off' ordinal='1' />
+            <column datatype='string' name='Team' ordinal='2' />
+            <column datatype='integer' name='Win' ordinal='3' />
+            <column datatype='integer' name='Loss' ordinal='4' />
+            <column datatype='integer' name='Games' ordinal='5' />
+            <column datatype='integer' name='PF_Off' ordinal='6' />
+            <column datatype='integer' name='Total Yds_Off' ordinal='7' />
+            <column datatype='integer' name='Plays_Off' ordinal='8' />
+            <column datatype='real' name='Y/P_Off' ordinal='9' />
+            <column datatype='integer' name='TO_Off' ordinal='10' />
+            <column datatype='integer' name='FL_Off' ordinal='11' />
+            <column datatype='integer' name='1stD_Off' ordinal='12' />
+            <column datatype='integer' name='Cmp_Off' ordinal='13' />
+            <column datatype='integer' name='Pass Att_Off' ordinal='14' />
+            <column datatype='integer' name='Pass Yds_Off' ordinal='15' />
+            <column datatype='integer' name='Pass TD_Off' ordinal='16' />
+            <column datatype='integer' name='Int_Off' ordinal='17' />
+            <column datatype='real' name='Pass NY/A_Off' ordinal='18' />
+            <column datatype='integer' name='Pass 1stD_Off' ordinal='19' />
+            <column datatype='integer' name='Rush Att_Off' ordinal='20' />
+            <column datatype='integer' name='Rush Yds_Off' ordinal='21' />
+            <column datatype='integer' name='Rush TD_Off' ordinal='22' />
+            <column datatype='real' name='Rush Y/A_Off' ordinal='23' />
+            <column datatype='integer' name='Rush 1stD_Off' ordinal='24' />
+            <column datatype='integer' name='Pen_Off' ordinal='25' />
+            <column datatype='integer' name='Pen Yds_Off' ordinal='26' />
+            <column datatype='integer' name='1stPy_Off' ordinal='27' />
+            <column datatype='real' name='Sc%_Off' ordinal='28' />
+            <column datatype='real' name='TO%_Off' ordinal='29' />
+            <column datatype='real' name='EXP_Off' ordinal='30' />
+            <column datatype='integer' name='Rk_Def' ordinal='31' />
+            <column datatype='integer' name='PF_Def' ordinal='32' />
+            <column datatype='integer' name='Total Yds_Def' ordinal='33' />
+            <column datatype='integer' name='Ply_Def' ordinal='34' />
+            <column datatype='real' name='Y/P_Def' ordinal='35' />
+            <column datatype='integer' name='TO_Def' ordinal='36' />
+            <column datatype='integer' name='FL_Def' ordinal='37' />
+            <column datatype='integer' name='Total 1stD_Def' ordinal='38' />
+            <column datatype='integer' name='Cmp_Def' ordinal='39' />
+            <column datatype='integer' name='Pass Att_Def' ordinal='40' />
+            <column datatype='integer' name='Pass Yds_Def' ordinal='41' />
+            <column datatype='integer' name='Pass TD_Def' ordinal='42' />
+            <column datatype='integer' name='Int_Def' ordinal='43' />
+            <column datatype='real' name='Pass NY/A_Def' ordinal='44' />
+            <column datatype='integer' name='Pass 1stD_Def' ordinal='45' />
+            <column datatype='integer' name='Rush Att_Def' ordinal='46' />
+            <column datatype='integer' name='Rush Yds_Def' ordinal='47' />
+            <column datatype='integer' name='Rush TD_Def' ordinal='48' />
+            <column datatype='real' name='Rush Y/A_Def' ordinal='49' />
+            <column datatype='integer' name='Rush 1stD_Def' ordinal='50' />
+            <column datatype='integer' name='Pen_Def' ordinal='51' />
+            <column datatype='integer' name='Pen Yds_Def' ordinal='52' />
+            <column datatype='integer' name='1stPy_Def' ordinal='53' />
+            <column datatype='real' name='Sc%_Def' ordinal='54' />
+            <column datatype='real' name='TO%_Def' ordinal='55' />
+            <column datatype='real' name='EXP_Def' ordinal='56' />
+            <column datatype='integer' name='Overall Production' ordinal='57' />
+            <column datatype='real' name='Win/Loss_Pct' ordinal='58' />
+            <column datatype='real' name='PPG_Off' ordinal='59' />
+            <column datatype='real' name='PPG_Def' ordinal='60' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0nf7w7h1ajta87180jrqx0jnaery' name='2000-2019_cleaned_data3.csv' table='[2000-2019_cleaned_data3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Rk_Off' ordinal='1' />
+            <column datatype='string' name='Team' ordinal='2' />
+            <column datatype='integer' name='Win' ordinal='3' />
+            <column datatype='integer' name='Loss' ordinal='4' />
+            <column datatype='integer' name='Games' ordinal='5' />
+            <column datatype='integer' name='PF_Off' ordinal='6' />
+            <column datatype='integer' name='Total Yds_Off' ordinal='7' />
+            <column datatype='integer' name='Plays_Off' ordinal='8' />
+            <column datatype='real' name='Y/P_Off' ordinal='9' />
+            <column datatype='integer' name='TO_Off' ordinal='10' />
+            <column datatype='integer' name='FL_Off' ordinal='11' />
+            <column datatype='integer' name='1stD_Off' ordinal='12' />
+            <column datatype='integer' name='Cmp_Off' ordinal='13' />
+            <column datatype='integer' name='Pass Att_Off' ordinal='14' />
+            <column datatype='integer' name='Pass Yds_Off' ordinal='15' />
+            <column datatype='integer' name='Pass TD_Off' ordinal='16' />
+            <column datatype='integer' name='Int_Off' ordinal='17' />
+            <column datatype='real' name='Pass NY/A_Off' ordinal='18' />
+            <column datatype='integer' name='Pass 1stD_Off' ordinal='19' />
+            <column datatype='integer' name='Rush Att_Off' ordinal='20' />
+            <column datatype='integer' name='Rush Yds_Off' ordinal='21' />
+            <column datatype='integer' name='Rush TD_Off' ordinal='22' />
+            <column datatype='real' name='Rush Y/A_Off' ordinal='23' />
+            <column datatype='integer' name='Rush 1stD_Off' ordinal='24' />
+            <column datatype='integer' name='Pen_Off' ordinal='25' />
+            <column datatype='integer' name='Pen Yds_Off' ordinal='26' />
+            <column datatype='integer' name='1stPy_Off' ordinal='27' />
+            <column datatype='real' name='Sc%_Off' ordinal='28' />
+            <column datatype='real' name='TO%_Off' ordinal='29' />
+            <column datatype='real' name='EXP_Off' ordinal='30' />
+            <column datatype='integer' name='Rk_Def' ordinal='31' />
+            <column datatype='integer' name='PF_Def' ordinal='32' />
+            <column datatype='integer' name='Total Yds_Def' ordinal='33' />
+            <column datatype='integer' name='Ply_Def' ordinal='34' />
+            <column datatype='real' name='Y/P_Def' ordinal='35' />
+            <column datatype='integer' name='TO_Def' ordinal='36' />
+            <column datatype='integer' name='FL_Def' ordinal='37' />
+            <column datatype='integer' name='Total 1stD_Def' ordinal='38' />
+            <column datatype='integer' name='Cmp_Def' ordinal='39' />
+            <column datatype='integer' name='Pass Att_Def' ordinal='40' />
+            <column datatype='integer' name='Pass Yds_Def' ordinal='41' />
+            <column datatype='integer' name='Pass TD_Def' ordinal='42' />
+            <column datatype='integer' name='Int_Def' ordinal='43' />
+            <column datatype='real' name='Pass NY/A_Def' ordinal='44' />
+            <column datatype='integer' name='Pass 1stD_Def' ordinal='45' />
+            <column datatype='integer' name='Rush Att_Def' ordinal='46' />
+            <column datatype='integer' name='Rush Yds_Def' ordinal='47' />
+            <column datatype='integer' name='Rush TD_Def' ordinal='48' />
+            <column datatype='real' name='Rush Y/A_Def' ordinal='49' />
+            <column datatype='integer' name='Rush 1stD_Def' ordinal='50' />
+            <column datatype='integer' name='Pen_Def' ordinal='51' />
+            <column datatype='integer' name='Pen Yds_Def' ordinal='52' />
+            <column datatype='integer' name='1stPy_Def' ordinal='53' />
+            <column datatype='real' name='Sc%_Def' ordinal='54' />
+            <column datatype='real' name='TO%_Def' ordinal='55' />
+            <column datatype='real' name='EXP_Def' ordinal='56' />
+            <column datatype='integer' name='Overall Production' ordinal='57' />
+            <column datatype='real' name='Win/Loss_Pct' ordinal='58' />
+            <column datatype='real' name='PPG_Off' ordinal='59' />
+            <column datatype='real' name='PPG_Def' ordinal='60' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rk_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rk_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rk_Off</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Win]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Win</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loss</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Loss]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Loss</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Games</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Games]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Games</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PF_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>PF_Off</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Yds_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Yds_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Total Yds_Off</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plays_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Plays_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Plays_Off</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y/P_Off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Y/P_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Y/P_Off</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TO_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TO_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>TO_Off</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FL_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FL_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>FL_Off</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1stD_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1stD_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>1stD_Off</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cmp_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cmp_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Cmp_Off</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Att_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pass Att_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass Att_Off</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Yds_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pass Yds_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass Yds_Off</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass TD_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pass TD_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass TD_Off</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Int_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Int_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Int_Off</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass NY/A_Off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass NY/A_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass NY/A_Off</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass 1stD_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pass 1stD_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass 1stD_Off</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush Att_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rush Att_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush Att_Off</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush Yds_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rush Yds_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush Yds_Off</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush TD_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rush TD_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush TD_Off</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush Y/A_Off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rush Y/A_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush Y/A_Off</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush 1stD_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rush 1stD_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush 1stD_Off</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pen_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pen_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pen_Off</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pen Yds_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pen Yds_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pen Yds_Off</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1stPy_Off</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1stPy_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>1stPy_Off</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sc%_Off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sc%_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Sc%_Off</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TO%_Off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TO%_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>TO%_Off</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXP_Off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXP_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>EXP_Off</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rk_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rk_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rk_Def</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PF_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>PF_Def</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Yds_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Yds_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Total Yds_Def</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ply_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ply_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Ply_Def</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y/P_Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Y/P_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Y/P_Def</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TO_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TO_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>TO_Def</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FL_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FL_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>FL_Def</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total 1stD_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total 1stD_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Total 1stD_Def</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cmp_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cmp_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Cmp_Def</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Att_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pass Att_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass Att_Def</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass Yds_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pass Yds_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass Yds_Def</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass TD_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pass TD_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass TD_Def</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Int_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Int_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Int_Def</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass NY/A_Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass NY/A_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass NY/A_Def</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass 1stD_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pass 1stD_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pass 1stD_Def</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush Att_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rush Att_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush Att_Def</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush Yds_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rush Yds_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush Yds_Def</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush TD_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rush TD_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush TD_Def</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush Y/A_Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rush Y/A_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush Y/A_Def</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush 1stD_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rush 1stD_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Rush 1stD_Def</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pen_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pen_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pen_Def</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pen Yds_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pen Yds_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Pen Yds_Def</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1stPy_Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1stPy_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>1stPy_Def</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sc%_Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sc%_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Sc%_Def</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TO%_Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TO%_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>TO%_Def</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXP_Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXP_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>EXP_Def</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overall Production</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Overall Production]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Overall Production</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win/Loss_Pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Win/Loss_Pct]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>Win/Loss_Pct</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PPG_Off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PPG_Off]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>PPG_Off</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PPG_Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PPG_Def]</local-name>
+            <parent-name>[2000-2019_cleaned_data3.csv]</parent-name>
+            <remote-alias>PPG_Def</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1stD Off' datatype='integer' name='[1stD_Off]' role='measure' type='quantitative' />
+      <column caption='1stPy Def' datatype='integer' name='[1stPy_Def]' role='measure' type='quantitative' />
+      <column caption='1stPy Off' datatype='integer' name='[1stPy_Off]' role='measure' type='quantitative' />
+      <column caption='Cmp Def' datatype='integer' name='[Cmp_Def]' role='measure' type='quantitative' />
+      <column caption='Cmp Off' datatype='integer' name='[Cmp_Off]' role='measure' type='quantitative' />
+      <column caption='EXP Def' datatype='real' name='[EXP_Def]' role='measure' type='quantitative' />
+      <column caption='EXP Off' datatype='real' name='[EXP_Off]' role='measure' type='quantitative' />
+      <column caption='FL Def' datatype='integer' name='[FL_Def]' role='measure' type='quantitative' />
+      <column caption='FL Off' datatype='integer' name='[FL_Off]' role='measure' type='quantitative' />
+      <column caption='Int Def' datatype='integer' name='[Int_Def]' role='measure' type='quantitative' />
+      <column caption='Int Off' datatype='integer' name='[Int_Off]' role='measure' type='quantitative' />
+      <column caption='PF Def' datatype='integer' name='[PF_Def]' role='measure' type='quantitative' />
+      <column caption='PF Off' datatype='integer' name='[PF_Off]' role='measure' type='quantitative' />
+      <column caption='PPG Def' datatype='real' name='[PPG_Def]' role='measure' type='quantitative' />
+      <column caption='PPG Off' datatype='real' name='[PPG_Off]' role='measure' type='quantitative' />
+      <column caption='Pass 1stD Def' datatype='integer' name='[Pass 1stD_Def]' role='measure' type='quantitative' />
+      <column caption='Pass 1stD Off' datatype='integer' name='[Pass 1stD_Off]' role='measure' type='quantitative' />
+      <column caption='Pass Att Def' datatype='integer' name='[Pass Att_Def]' role='measure' type='quantitative' />
+      <column caption='Pass Att Off' datatype='integer' name='[Pass Att_Off]' role='measure' type='quantitative' />
+      <column caption='Pass NY/A Def' datatype='real' name='[Pass NY/A_Def]' role='measure' type='quantitative' />
+      <column caption='Pass NY/A Off' datatype='real' name='[Pass NY/A_Off]' role='measure' type='quantitative' />
+      <column caption='Pass TD Def' datatype='integer' name='[Pass TD_Def]' role='measure' type='quantitative' />
+      <column caption='Pass TD Off' datatype='integer' name='[Pass TD_Off]' role='measure' type='quantitative' />
+      <column caption='Pass Yds Def' datatype='integer' name='[Pass Yds_Def]' role='measure' type='quantitative' />
+      <column caption='Pass Yds Off' datatype='integer' name='[Pass Yds_Off]' role='measure' type='quantitative' />
+      <column caption='Pen Yds Def' datatype='integer' name='[Pen Yds_Def]' role='measure' type='quantitative' />
+      <column caption='Pen Yds Off' datatype='integer' name='[Pen Yds_Off]' role='measure' type='quantitative' />
+      <column caption='Pen Def' datatype='integer' name='[Pen_Def]' role='measure' type='quantitative' />
+      <column caption='Pen Off' datatype='integer' name='[Pen_Off]' role='measure' type='quantitative' />
+      <column caption='Plays Off' datatype='integer' name='[Plays_Off]' role='measure' type='quantitative' />
+      <column caption='Ply Def' datatype='integer' name='[Ply_Def]' role='measure' type='quantitative' />
+      <column caption='Rk Def' datatype='integer' name='[Rk_Def]' role='measure' type='quantitative' />
+      <column caption='Rk Off' datatype='integer' name='[Rk_Off]' role='measure' type='quantitative' />
+      <column caption='Rush 1stD Def' datatype='integer' name='[Rush 1stD_Def]' role='measure' type='quantitative' />
+      <column caption='Rush 1stD Off' datatype='integer' name='[Rush 1stD_Off]' role='measure' type='quantitative' />
+      <column caption='Rush Att Def' datatype='integer' name='[Rush Att_Def]' role='measure' type='quantitative' />
+      <column caption='Rush Att Off' datatype='integer' name='[Rush Att_Off]' role='measure' type='quantitative' />
+      <column caption='Rush TD Def' datatype='integer' name='[Rush TD_Def]' role='measure' type='quantitative' />
+      <column caption='Rush TD Off' datatype='integer' name='[Rush TD_Off]' role='measure' type='quantitative' />
+      <column caption='Rush Y/A Def' datatype='real' name='[Rush Y/A_Def]' role='measure' type='quantitative' />
+      <column caption='Rush Y/A Off' datatype='real' name='[Rush Y/A_Off]' role='measure' type='quantitative' />
+      <column caption='Rush Yds Def' datatype='integer' name='[Rush Yds_Def]' role='measure' type='quantitative' />
+      <column caption='Rush Yds Off' datatype='integer' name='[Rush Yds_Off]' role='measure' type='quantitative' />
+      <column caption='Sc% Def' datatype='real' name='[Sc%_Def]' role='measure' type='quantitative' />
+      <column caption='Sc% Off' datatype='real' name='[Sc%_Off]' role='measure' type='quantitative' />
+      <column caption='TO% Def' datatype='real' name='[TO%_Def]' role='measure' type='quantitative' />
+      <column caption='TO% Off' datatype='real' name='[TO%_Off]' role='measure' type='quantitative' />
+      <column caption='TO Def' datatype='integer' name='[TO_Def]' role='measure' type='quantitative' />
+      <column caption='TO Off' datatype='integer' name='[TO_Off]' role='measure' type='quantitative' />
+      <column caption='Total 1stD Def' datatype='integer' name='[Total 1stD_Def]' role='measure' type='quantitative' />
+      <column caption='Total Yds Def' datatype='integer' name='[Total Yds_Def]' role='measure' type='quantitative' />
+      <column caption='Total Yds Off' datatype='integer' name='[Total Yds_Off]' role='measure' type='quantitative' />
+      <column caption='Win/Loss Pct' datatype='real' name='[Win/Loss_Pct]' role='measure' type='quantitative' />
+      <column caption='Y/P Def' datatype='real' name='[Y/P_Def]' role='measure' type='quantitative' />
+      <column caption='Y/P Off' datatype='real' name='[Y/P_Off]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='2000-2019_cleaned_data3.csv' datatype='table' name='[__tableau_internal_object_id__].[2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='2000-2019_cleaned_data3.csv' id='2000-2019_cleaned_data3.csv_E3EC67E070984CCE9A312EFD51904E19'>
+            <properties context=''>
+              <relation connection='textscan.0nf7w7h1ajta87180jrqx0jnaery' name='2000-2019_cleaned_data3.csv' table='[2000-2019_cleaned_data3#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Rk_Off' ordinal='1' />
+                  <column datatype='string' name='Team' ordinal='2' />
+                  <column datatype='integer' name='Win' ordinal='3' />
+                  <column datatype='integer' name='Loss' ordinal='4' />
+                  <column datatype='integer' name='Games' ordinal='5' />
+                  <column datatype='integer' name='PF_Off' ordinal='6' />
+                  <column datatype='integer' name='Total Yds_Off' ordinal='7' />
+                  <column datatype='integer' name='Plays_Off' ordinal='8' />
+                  <column datatype='real' name='Y/P_Off' ordinal='9' />
+                  <column datatype='integer' name='TO_Off' ordinal='10' />
+                  <column datatype='integer' name='FL_Off' ordinal='11' />
+                  <column datatype='integer' name='1stD_Off' ordinal='12' />
+                  <column datatype='integer' name='Cmp_Off' ordinal='13' />
+                  <column datatype='integer' name='Pass Att_Off' ordinal='14' />
+                  <column datatype='integer' name='Pass Yds_Off' ordinal='15' />
+                  <column datatype='integer' name='Pass TD_Off' ordinal='16' />
+                  <column datatype='integer' name='Int_Off' ordinal='17' />
+                  <column datatype='real' name='Pass NY/A_Off' ordinal='18' />
+                  <column datatype='integer' name='Pass 1stD_Off' ordinal='19' />
+                  <column datatype='integer' name='Rush Att_Off' ordinal='20' />
+                  <column datatype='integer' name='Rush Yds_Off' ordinal='21' />
+                  <column datatype='integer' name='Rush TD_Off' ordinal='22' />
+                  <column datatype='real' name='Rush Y/A_Off' ordinal='23' />
+                  <column datatype='integer' name='Rush 1stD_Off' ordinal='24' />
+                  <column datatype='integer' name='Pen_Off' ordinal='25' />
+                  <column datatype='integer' name='Pen Yds_Off' ordinal='26' />
+                  <column datatype='integer' name='1stPy_Off' ordinal='27' />
+                  <column datatype='real' name='Sc%_Off' ordinal='28' />
+                  <column datatype='real' name='TO%_Off' ordinal='29' />
+                  <column datatype='real' name='EXP_Off' ordinal='30' />
+                  <column datatype='integer' name='Rk_Def' ordinal='31' />
+                  <column datatype='integer' name='PF_Def' ordinal='32' />
+                  <column datatype='integer' name='Total Yds_Def' ordinal='33' />
+                  <column datatype='integer' name='Ply_Def' ordinal='34' />
+                  <column datatype='real' name='Y/P_Def' ordinal='35' />
+                  <column datatype='integer' name='TO_Def' ordinal='36' />
+                  <column datatype='integer' name='FL_Def' ordinal='37' />
+                  <column datatype='integer' name='Total 1stD_Def' ordinal='38' />
+                  <column datatype='integer' name='Cmp_Def' ordinal='39' />
+                  <column datatype='integer' name='Pass Att_Def' ordinal='40' />
+                  <column datatype='integer' name='Pass Yds_Def' ordinal='41' />
+                  <column datatype='integer' name='Pass TD_Def' ordinal='42' />
+                  <column datatype='integer' name='Int_Def' ordinal='43' />
+                  <column datatype='real' name='Pass NY/A_Def' ordinal='44' />
+                  <column datatype='integer' name='Pass 1stD_Def' ordinal='45' />
+                  <column datatype='integer' name='Rush Att_Def' ordinal='46' />
+                  <column datatype='integer' name='Rush Yds_Def' ordinal='47' />
+                  <column datatype='integer' name='Rush TD_Def' ordinal='48' />
+                  <column datatype='real' name='Rush Y/A_Def' ordinal='49' />
+                  <column datatype='integer' name='Rush 1stD_Def' ordinal='50' />
+                  <column datatype='integer' name='Pen_Def' ordinal='51' />
+                  <column datatype='integer' name='Pen Yds_Def' ordinal='52' />
+                  <column datatype='integer' name='1stPy_Def' ordinal='53' />
+                  <column datatype='real' name='Sc%_Def' ordinal='54' />
+                  <column datatype='real' name='TO%_Def' ordinal='55' />
+                  <column datatype='real' name='EXP_Def' ordinal='56' />
+                  <column datatype='integer' name='Overall Production' ordinal='57' />
+                  <column datatype='real' name='Win/Loss_Pct' ordinal='58' />
+                  <column datatype='real' name='PPG_Off' ordinal='59' />
+                  <column datatype='real' name='PPG_Def' ordinal='60' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4D8B5CE1-DBB7-4971-8DE7-AF9378B1415B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1C884C9A-9A14-4560-A52B-4D82F918568E}' />
+    </window>
+  </windows>
+</workbook>
