@@ -1,6 +1,7 @@
 # Final Project
 
 *"Foos-ball? Buncha overgrown monsters man-handlin' each other... 'Member when dat man wanted you to play foos-ball, Bobby?" - Mama Boucher*
+-The WaterBoy, 1998
 
 ## NFL Statistical Analysis & Prediction of Win-Loss Records 
 
@@ -10,10 +11,18 @@
 - [x] Extracted data as CSV files
 - [x] Jupyter Notebooks/Pandas to clean data (remove extraneous columns, join or merge files; to produce consistent datasets for each year)
 - [x] Continue wrangling .csv's into a usable dataframe for training and testing
-- [ ] Build a machine learning model (classification?)
-- [ ] Train and test model on 2000-2018 to predict 2019 season W/L ratio (season win total)
+- [x] Build a machine learning model (classification?)
+- [ ] Train model on 2000-2018, test and predict on 2019 season W/L ratio (season win total)
+- [ ] Build season stat estimation formula for prediction of season W/L ratio based on estimates to emulate final use case 
+- [ ] Test model on 2019 estimated stats 
 - [ ] Verify accuracy and viability of model by comparing results of model predictions to actual 2019 W/L ratios
-- [ ] Use model to predict 2020 season results [assuming a "normal" season (Full-length, without factoring for Covid-19 variables)]
+- [ ] Use model to predict 2020 season results; assuming a "normal" season *Full-length, without factoring for Covid-19 variables*
+
+### Build Deployment Module
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 
 ### User Interface Build and Project Presentation
 - [ ] Use Tableau to build a story with which to present our results in a visually appealing and informative manner
