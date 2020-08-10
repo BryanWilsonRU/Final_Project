@@ -15,21 +15,22 @@
 - [x] Train model on 2000-2018, test and predict on 2019 season W/L ratio (season win total) *Jeremy, with some help*
 - [x] Test Option 1: Created season stat estimation formula for prediction of season W/L ratio based on estimates to emulate final use case *Matt*
 - [x] Test Option 2: Use the Adjusted Pythagorean Theorem (source www.footballoutsiders.com)  *Brian*
-- [ ] Test model on both versions of 2019 estimated stats *Jeremy, with help*
-- [ ] Verify accuracy and viability of model by comparing results of model predictions to actual 2019 W/L ratios, choose the best stat estimation *Team*
-- [ ] Use model to predict 2020 season results; assuming a "normal" season (*Full-length, without factoring for Covid-19 variables*) *Team*
+- [x] Test model on both versions of 2019 estimated stats *Jeremy, with help*
+- [x] Verify accuracy and viability of model by comparing results of model predictions to actual 2019 W/L ratios, choose the best stat estimation *Team*
+- [x] Use model to predict 2020 season results; assuming a "normal" season (*Full-length, without factoring for Covid-19 variables*) *Team*
+- [ ] Develop clear conclusion about model performance, and relate in the presentation
 
-### Build Deployment Module & User Interface; Launch on AWS Server
+### Build Deployment Module & User Interface; Launch on AWS Server (Or a Website?)
 - [x] Build basic webpage with placeholder information (will fill in later once model, prediction, and Tableau Story are finished) *Alim*
-- [ ] Build a flask app to enable the python script to run on a cloud-based webpage *Alim*
+- [x] Build a flask app to enable the python script to run on a cloud-based webpage *Alim*
 - [ ] Convert Machine Learning model Jupyter Notebook to a Python file to be able to run the model live *Entire Team*
 - [ ] Fill out, format, and design a clean, visually appealing, usable webpage *Bryan, Alim*
  
 ### Project Presentation
-- [ ] Use Tableau to build a story with which to present our results in a visually appealing and informative manner *Brian, Bryan*
+- [ ] Use Tableau to build a story with which to present our results in a visually appealing and informative manner, OR, Tell our story through our website and class presentation *Brian, Bryan*
 - [ ] Rehearse presentation *Team*
 - [ ] Present project to the class and submit for grading *Team*
-- [ ] Celebratory champagne for winning the Rutgers Data Science Final Project Super Bowl i.e. IT'S GRADUATION TIME BOYS!!! *Team*
+- [ ] Celebratory champagne for the end of this class i.e. IT'S GRADUATION TIME BOYS!!! *Team*
 
 
 ### Meeting Notes- Tuesday, August 4th
