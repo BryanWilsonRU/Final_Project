@@ -26,8 +26,7 @@ There is a low degree of confidence that the previous season stats for any team 
 
 *Website Build
 1. HTML 
-2. CSS
-  - Bootstrap
+2. CSS (Bootstrap)
 3. JavaScript
 
 
