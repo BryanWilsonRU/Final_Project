@@ -5,10 +5,10 @@
 
 ## NFL Statistical Analysis & Prediction of Win-Loss Records 
 
-* Project Team: Jeremy Brent, Alim Memon, Brian Remite, Matt Sadowski, Bryan Wilson*
+* Project Team: Jeremy Brent, Alim Memon, Brian Remite, Matt Sadowski, Bryan Wilson
 
-* Hypothesis: NFL Season Stats Can Be Used to Predict the Results of the Following Season*
-* Conclusion: *
+* Hypothesis: NFL Season Stats Can Be Used to Predict the Results of the Following Season
+* Conclusion: 
 
 ### Programs/Methods Used to ETL Data, Build a Machine Learning Model, & Test and Train Model to Predict a Team's W/L Record based on statistics.
 - [x] Extracted data as CSV files
