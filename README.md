@@ -11,10 +11,10 @@
 
 * Conclusion:
 There is a low degree of confidence that the previous season stats for any team is a significant indicator of future performance. This can be attributed to a wide variety of causes, including, but not limited to: 
-- Roster changes due to trades, draft picks, and retirements
-- Increases/decreases in team momentum and cohesion among players and the organization
-- Injuries
-- Weather and/or unforeseeable "acts of God" (earthquakes, hurricanes, etc.)
+  - Roster changes due to trades, draft picks, and retirements
+  - Increases/decreases in team momentum and cohesion among players and the organization
+  - Injuries
+  - Weather and/or unforeseeable "acts of God" (earthquakes, hurricanes, etc.)
 
 ### Libraries/Software Used:
 *Model Build
