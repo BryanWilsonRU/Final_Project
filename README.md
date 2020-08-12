@@ -42,13 +42,14 @@ There is a low degree of confidence that the previous season stats for any team 
 - [x] Verify accuracy and viability of model by comparing results of model predictions to actual 2019 W/L ratios, choose the best stat estimation
 - [x] Use model to predict 2020 season results; assuming a "normal" season (*Full-length, without factoring for Covid-19 variables*)
 - [x] Consider the possible application of a Neural Network
-- [ ] Build, train, and test on data to form a conclusion about the usefulness of the neural network.
+- [x] Build, train, and test on data to form a conclusion about the usefulness of the neural network.
 - [ ] Develop clear conclusion about various model performance, describe on website, and include in presentation
 
 ### Build Deployment Module & User Interface; Launch Website Using GitHub Pages
 - [x] Build basic webpage with placeholder information (will fill in later once model, prediction, hypothesis, and conclusion are finished)
 - [x] Build a flask app to enable the python script to run on a cloud-based webpage
-- [ ] Convert Machine Learning model Jupyter Notebook to a Python file to be able to run the model live 
+- [ ] Convert Machine Learning model Jupyter Notebook to a HTML page to post on website
+- [ ] Add clear documentation to Jupyter Notebook, & shorten dataframe-displaying cells (.head()) to reduce length of notebook page.
 - [ ] Fill out, format, and design a clean, visually appealing, usable website
   - [x] Include a Home page
   - [ ] Include the actual model (Jupyter Notebook containing our ML model, and our Neural Network. Try to fit in 1 clearly documented, concise notebook)
