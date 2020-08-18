@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -14,16 +14,18 @@
     <link href="webpage/static/css/bootstrap.css" rel="stylesheet">
     <link href="webpage/static/css/fontawesome-all.css" rel="stylesheet">
     <link href="webpage/static/css/swiper.css" rel="stylesheet">
-	<link href="webpage/static/css/magnific-popup.css" rel="stylesheet">
-	<link href="webpage/static/css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="webpage/static/images/favicon.png">
+    <link href="webpage/static/css/magnific-popup.css" rel="stylesheet">
+    <link href="webpage/static/css/styles.css" rel="stylesheet">
+    
+    <!-- Favicon  -->
+    <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.jpeg">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
     <!-- Preloader -->
-	<div class="spinner-wrapper">
+    <div class="spinner-wrapper">
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
@@ -70,9 +72,6 @@
 
                 <!-- end of dropdown menu -->
 
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-                </li>
             </ul>
                 <span class="fa-stack">
                     <a href="https://github.com/BryanWilsonRU/Final_Project">
@@ -94,7 +93,7 @@
                         <div class="text-container">
                             <h1>Using Machine Learning To Predict-<span id="js-rotating">Season, Win/Loss Ratio</span></h1>
                             <p class="p-heading p-large">Disclaimer: Prediction Designed for Academic Use ONLY</p>
-                            <a class="btn-solid-lg page-scroll" href="#intro">DISCOVER</a>
+                            <a class="btn-solid-lg page-scroll" href="#hypothesis">DISCOVER</a>
                         </div>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -111,11 +110,11 @@
     <div id="hypothesis" class="basic-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-10">
                     <div class="text-container">
-                        <div class="section-title">Hypothesis</div>
-                        <h2>To be added....</h2>
-                        <p></p>
+                        <div class="section-title">HYPOTHESIS</div>
+                        <h3>We hypothesized that we could train a machine learning model to predict teams win/loss records for future seasons evaluating team stats from past seasons.</h3>
+
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
@@ -127,17 +126,56 @@
     <!-- end of hypothesis -->
 
     <!-- end of process -->
-    <div id="process" class="basic-1">
+    <div id="process" class="counter">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <div class="text-container">
-                        <div class="section-title">Process</div>
-                        <h2>To be added....</h2>
-                        <p></p>
+                        <div class="section-title">PROCESS</div>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Pull data from pro-football-reference.com and the sports-reference.com API</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Process the data using Pandas</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Create a number of regression models and graph the results via matplotlib</div>
+                            </li>
+                            <li class="media"
+                                {padding-right: 40px;
+                                    position: relative;
+                                    &:before {display: inline-block;
+                                    position: absolute;
+                                    right: 0;
+                                }
+                            }>
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Create a model to predict current season’s W/L record </div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Use that model to predict future season’s W/L Record</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Determine the viability of our models by comparing results</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Publish our findings to GitHub website</div>
+                            </li>
+                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/NFLBalls.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -153,8 +191,8 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="text-container">
-                        <div class="section-title">Model</div>
-                        <h2>To be added....</h2>
+                        <div class="section-title">MODEL</div>
+                        <h2>Shows ML Model HTML page</h2>
                         <p></p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -171,10 +209,10 @@
     <div id="findings" class="basic-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-13">
                     <div class="text-container">
-                        <div class="section-title">Findings</div>
-                        <h2>To be added....</h2>
+                        <div class="section-title">FINDINGS</div>
+                        <h2>We learned that current season data doesn’t provide a solid base to predict future seasons due to the many intangible factors that happen between seasons.  Our models came up with R-squared numbers of .13 and lower.</h2>
                         <p></p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -193,26 +231,22 @@
             <div class="row">
                 <div class="col-lg-5 col-xl-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="webpage/static/images/crew.jpg" alt="alternative">
+                        <img class="img-fluid" src="images/rutgers.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7 col-xl-6">
                     <div class="text-container">
                         <div class="section-title">ABOUT US</div>
                         <h2>Combining Our Passion for Data Science, Machine Learning, and Sports</h2>
-                        <p>Jeremy Brent- Data Scientist. Clark University, graduated 2019. Major: Biology & Psychology.</p>
-                        <p>Matt Sadowski- Senior Data Analyst at SHI International.</p>
-                        <p>Brian Remite- 12 years of experience as an SQL Database Analyst.</p>
-                        <p>Bryan Wilson- Data Scientist/Web Developer. Kean University, graduated 2017. Major: Business Administration, concentration in Finance.</p>
-                        <p>Alim Memon- Senior at Rutgers. Major: Information Technology and Informatics. Strong interest in Machine Learning and AI.</p>
+                        <p>Jeremy Brent- Data Scientist. Clark University, graduated 2019. Major: Biology & Psychology. <a href="http://www.linkedin.com/in/jeremy-brent">LinkedIn </a> </p>
+                        <p>Matt Sadowski- Senior Data Analyst at SHI International. <a href="https://www.linkedin.com/in/matthew-sadowski-72b59656/"> LinkedIn </a> </p></p>
+                        <p>Brian Remite- 12 years of experience as an SQL Database Analyst.<a href="https://www.linkedin.com/in/brianremite/"> LinkedIn </a></p>
+                        <p>Bryan Wilson- Data Scientist/Web Developer. Kean University, graduated 2017. Major: Business Administration, concentration in Finance. <a href="www.linkedin.com/in/bryan-wilson-data"> LinkedIn </a></p>
+                        <p>Alim Memon- Data Scientist & senior at Rutgers University. Major: Information Technology and Informatics; Interested in Machine Learning and AI.<a href="https://www.linkedin.com/in/alimmemon/"> LinkedIn </a></p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
                                 <div class="media-body">Rutgers Data Science Cohort 2020</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Maybe add something here...</div>
                             </li>
                         </ul>
 
@@ -223,37 +257,6 @@
         </div> <!-- end of container -->
     </div> <!-- end of counter -->
     <!-- end of about -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="section-title">CONTACT</div>
-                        <h5>Get In Touch</h5>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">
-                                    <p>Jeremy Brent <a href="https://www.linkedin.com/in/jeremy-brent/">LinkedIn</a></p>
-                                    <p>Alim Memon <a href="https://www.linkedin.com/in/alimmemon/">LinkedIn</a></p>
-                                    <p>Brian Remite <a href="https://www.linkedin.com/in/brianremite/">LinkedIn</a></p>
-                                    <p>Matthew Sadowski <a href="https://www.linkedin.com/in/matthew-sadowski-72b59656/">LinkedIn</a></p>
-                                    <p>Bryan Wilson <a href="https://www.linkedin.com/in/bryan-wilson-data/">LinkedIn</a></p>
-                                </div>
-                            </li>
-                </div> <!-- end of col -->
-                    <!-- end of contact form -->
-
- 
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of contact --> 
-
-
 
 
 
@@ -269,7 +272,7 @@
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
     
-    	
+        
     <!-- Scripts -->
     <script src="webpage/static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="webpage/static/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
