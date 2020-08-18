@@ -44,22 +44,22 @@ There is a low degree of confidence that the previous season stats for any team 
 - [x] Use model to predict 2020 season results; assuming a "normal" season (*Full-length, without factoring for Covid-19 variables*)
 - [x] Consider the possible application of a Neural Network
 - [x] Build, train, and test on data to form a conclusion about the usefulness of the neural network.
-- [ ] Develop clear conclusion about various model performance, describe on website, and include in presentation
+- [x] Develop clear conclusion about various model performance, describe on website, and include in presentation
 
 ### Build Deployment Module & User Interface; Launch Website Using GitHub Pages
 - [x] Build basic webpage with placeholder information (will fill in later once model, prediction, hypothesis, and conclusion are finished)
 - [x] Build a flask app to enable the python script to run on a cloud-based webpage
-- [ ] Convert Machine Learning model Jupyter Notebook to a HTML page to post on website
-- [ ] Add clear documentation to Jupyter Notebook, & shorten dataframe-displaying cells (.head()) to reduce length of notebook page.
-- [ ] Fill out, format, and design a clean, visually appealing, usable website
+- [x] Convert Machine Learning model Jupyter Notebook to a HTML page to post on website
+- [x] Add clear documentation to Jupyter Notebook, & shorten dataframe-displaying cells (.head()) to reduce length of notebook page.
+- [x] Fill out, format, and design a clean, visually appealing, usable website
   - [x] Include a Home page
-  - [ ] Include the actual model (Jupyter Notebook containing our ML model, and our Neural Network. Try to fit in 1 clearly documented, concise notebook)
+  - [x] Include the actual model (Jupyter Notebook containing our ML model, and our Neural Network. Try to fit in 1 clearly documented, concise notebook)
   - [x] Include our Hypothesis, Conclusion, and any/all information about our results and interpretation; based on facts/data rather than opinion.
-  - [ ] Design with relevant graphics, visuals, and in a consistent tone & format. 
+  - [x] Design with relevant graphics, visuals, and in a consistent tone & format. 
   - [x] Optional: Include a Contact/About page with information about each group member. 
  
 ### Project Presentation
-- [ ] Tell our story through our website and class presentation.
+- [x] Tell our story through our website and class presentation.
 - [ ] Rehearse presentation.
 - [ ] Present project to the class and submit for grading.
 - [ ] Celebrate all the hard work we've put in and get ready to party; WE'RE GRADUATING!!!
